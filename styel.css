@@ -38,7 +38,8 @@ label {
 
 input[type="number"],
 input[type="text"],
-input[type="checkbox"] {
+input[type="checkbox"],
+select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
