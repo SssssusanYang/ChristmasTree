@@ -55,6 +55,8 @@ document.getElementById('treeForm').addEventListener('submit', function(event) {
     const selectedEmojis = Array.from(document.querySelectorAll('input[name="emojis"]:checked')).map(checkbox => checkbox.value);
     const tree = generateChristmasTree(height, top, selectedEmojis, probability);
     document.getElementById('tree').innerHTML = tree;
+    document.body.style.backgroundColor = document.getElementById('bgColor').value;
+    document.getElementById('tree').style.color = document.getElementById('treeColor').value;
 });
 
 function copyTree() {
@@ -81,12 +83,3 @@ function downloadTree() {
     URL.revokeObjectURL(url);
 }
 
-function toggleBackgroundColor() {
-    currentColorIndex = (currentColorIndex + 1) % colors.length;
-    document.body.style.backgroundColor = colors[currentColorIndex];
-}
-
-function toggleTreeColor() {
-    currentTreeColorIndex = (currentTreeColorIndex + 1) % treeColors.length;
-    document.getElementById('tree').style.color = treeColors[currentTreeColorIndex];
-}
