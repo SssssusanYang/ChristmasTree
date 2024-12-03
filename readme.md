@@ -84,8 +84,8 @@ Christmas Tree Generator 是一个基于Web的圣诞树生成器，允许用户�
 
 如果你有任何问题或建议，请通过以下方式联系我们：
 
-- 邮箱：yangruishan1998@example.com
-- GitHub Issues：[GitHub Issues](https://github.com/SssssusanYang/christmas-tree-generator/issues)
+- 邮箱：yangruishan1998@163.com
+- GitHub Issues：[GitHub Issues]([https://github.com/SssssusanYang/christmas-tree-generator/issues](https://github.com/SssssusanYang/ChristmasTree/issues))
 
 ---
 
