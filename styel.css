@@ -1,0 +1,12 @@
+table {
+    border-collapse: collapse;
+}
+td {
+    padding: 5px;
+}
+body {
+    transition: background-color 0.5s;
+}
+pre {
+    transition: color 0.5s;
+}
