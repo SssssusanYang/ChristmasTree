@@ -20,7 +20,7 @@ body {
     max-width: 600px;
 }
 
-h1 {
+header h1 {
     text-align: center;
     color: #e74c3c;
     margin-bottom: 20px;
