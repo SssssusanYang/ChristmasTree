@@ -24,11 +24,11 @@ header h1 {
     text-align: center;
     color: #e74c3c;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 24px; /* 调整字体大小 */
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* 增加行间隔 */
 }
 
 label {
