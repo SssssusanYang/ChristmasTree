@@ -86,4 +86,5 @@ pre {
     border-radius: 5px;
     overflow-x: auto;
     transition: color 0.5s;
+    white-space: pre-wrap; /* 确保内容不会被截断 */
 }
