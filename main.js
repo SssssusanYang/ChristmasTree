@@ -1,12 +1,12 @@
 const colors = ['white', '#2ecc71', 'black', '#3498db', '#e74c3c', '#f1c40f'];
-const treeColors = ['#333', '#2ecc71', '#3498db', '#e74c3c', '#f1c40f', '#9b59b6'];
+const treeColors = ['#333', '#2ecc71', '#3498db', '#e74c3c', '#f1c40f', '#9b59b6', 'white'];
 let currentColorIndex = 0;
 let currentTreeColorIndex = 0;
 
 function generateChristmasTree(height, top, selectedEmojis, probability) {
     let tree = [];
     // 添加 top 作为第一层
-    for (let j = 0; j < height - top.length / 2; j++) {
+    for (let j = 0; j < height - top.length / 2 - 1; j++) {
         tree.push("&nbsp;");
     }
     tree.push(top);
