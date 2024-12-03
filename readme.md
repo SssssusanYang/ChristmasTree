@@ -46,7 +46,7 @@ Christmas Tree Generator 是一个基于Web的圣诞树生成器，允许用户�
 
 ### 在线访问
 
-- 你可以通过以下链接访问在线版本：[Christmas Tree Generator](https://yourwebsite.com)
+- 你可以通过以下链接访问在线版本：[Christmas Tree Generator](https://sssssusanyang.github.io/ChristmasTree/)
 
 ## 功能演示
 
@@ -84,8 +84,8 @@ Christmas Tree Generator 是一个基于Web的圣诞树生成器，允许用户�
 
 如果你有任何问题或建议，请通过以下方式联系我们：
 
-- 邮箱：your-email@example.com
-- GitHub Issues：[GitHub Issues](https://github.com/yourusername/christmas-tree-generator/issues)
+- 邮箱：yangruishan1998@example.com
+- GitHub Issues：[GitHub Issues](https://github.com/SssssusanYang/christmas-tree-generator/issues)
 
 ---
 
