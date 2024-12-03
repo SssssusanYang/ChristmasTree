@@ -37,8 +37,8 @@ Christmas Tree Generator 是一个基于Web的圣诞树生成器，允许用户�
 
 1. **克隆仓库**：
    ```bash
-   git clone https://github.com/yourusername/christmas-tree-generator.git
-   cd christmas-tree-generator
+   git clone https://github.com/SssssusanYang/ChristmasTree.git
+   cd ChristmasTree
    ```
 
 2. **打开项目**：
