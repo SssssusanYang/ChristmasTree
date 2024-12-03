@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
     color: #333;
     margin: 0;
@@ -7,68 +7,83 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    transition: background-color 0.5s;
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
 }
 
 .container {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 header h1 {
-    text-align: center;
+    font-size: 2.5em;
     color: #e74c3c;
-    margin-bottom: 20px;
-    font-size: 24px; /* 调整字体大小 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-    margin-bottom: 30px; /* 增加行间隔 */
+    margin-bottom: 20px;
 }
 
-label {
+.form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #555;
 }
 
-input[type="number"],
-input[type="text"],
-input[type="checkbox"],
-select {
+.form-group input[type="number"],
+.form-group input[type="text"],
+.form-group select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
 }
 
-table {
+.form-group input[type="number"]:focus,
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.form-group table {
     width: 100%;
     border-collapse: collapse;
 }
 
-td {
+.form-group table td {
     padding: 5px;
     text-align: center;
 }
 
+.form-group table input[type="checkbox"] {
+    margin-right: 5px;
+}
+
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
     background-color: #3498db;
     color: #fff;
-    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
@@ -76,15 +91,39 @@ td {
 }
 
 .buttons {
-    text-align: center;
     margin-top: 20px;
+    text-align: center;
 }
 
-pre {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
-    transition: color 0.5s;
-    white-space: pre-wrap; /* 确保内容不会被截断 */
+#tree {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .form-group input[type="number"],
+    .form-group input[type="text"],
+    .form-group select {
+        padding: 8px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
 }
