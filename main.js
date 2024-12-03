@@ -83,3 +83,26 @@ function downloadTree() {
     URL.revokeObjectURL(url);
 }
 
+function saveAsImage() {
+    const tree = document.getElementById('tree');
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    const treeText = tree.innerText.replace(/&nbsp;/g, ' ').replace(/<br>/g, '\n');
+    const lines = treeText.split('\n');
+    const maxWidth = Math.max(...lines.map(line => line.length));
+    const lineHeight = 20;
+    canvas.width = maxWidth * 10;
+    canvas.height = lines.length * lineHeight;
+    ctx.font = '16px Arial';
+    ctx.fillStyle = document.getElementById('treeColor').value;
+    lines.forEach((line, index) => {
+        ctx.fillText(line, 0, (index + 1) * lineHeight);
+    });
+    const dataURL = canvas.toDataURL('image/png');
+    const a = document.createElement('a');
+    a.href = dataURL;
+    a.download = 'christmas_tree.png';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
