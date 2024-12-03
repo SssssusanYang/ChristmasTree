@@ -20,7 +20,11 @@ function generateChristmasTree(height, top, selectedEmojis, probability) {
         }
         for (let k = 0; k < 2 * i + 1; k++) {
             if (Math.random() < probability) {  // 用户指定的概率添加装饰物
-                line += selectedEmojis[Math.floor(Math.random() * selectedEmojis.length)];
+                if (selectedEmojis.length > 0) {
+                    line += selectedEmojis[Math.floor(Math.random() * selectedEmojis.length)];
+                } else {
+                    line += ["O", "@", "o", ".", "💖", "🦦", "✨", "❤️", "🎀", "🌟", "❄️"][Math.floor(Math.random() * 11)];
+                }
             } else {
                 line += "*";
             }
