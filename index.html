@@ -7,85 +7,92 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Christmas Tree Generator for Keith&Echo</h1>
-    <form id="treeForm">
-        <label for="height">Enter Tree Height:</label>
-        <input type="number" id="height" name="height" min="1" required>
-        <br>
-        <label for="top">Enter Top Text:</label>
-        <input type="text" id="top" name="top" required>
-        <br>
-        <label for="probability">Enter Decoration Probability:</label>
-        <input type="number" id="probability" name="probability" min="0" max="1" step="0.01" value="0.25" required>
-        <br>
-        <label>Select Emojis:</label>
-        <br>
-        <table>
-            <tr>
-                <td><input type="checkbox" id="O" name="emojis" value="O"><label for="O">O</label></td>
-                <td><input type="checkbox" id="@" name="emojis" value="@"><label for="@">@</label></td>
-                <td><input type="checkbox" id="o" name="emojis" value="o"><label for="o">o</label></td>
-                <td><input type="checkbox" id="." name="emojis" value="."><label for=".">.</label></td>
-                <td><input type="checkbox" id="💖" name="emojis" value="💖"><label for="💖">💖</label></td>
-                <td><input type="checkbox" id="💗" name="emojis" value="💗"><label for="💗">💗</label></td>
-                <td><input type="checkbox" id="❤️" name="emojis" value="❤️"><label for="❤️">❤️</label></td>
-                <td><input type="checkbox" id="💚" name="emojis" value="💚"><label for="💚">💚</label></td>
-                <td><input type="checkbox" id="💙" name="emojis" value="💙"><label for="💙">💙</label></td>
-                <td><input type="checkbox" id="❣️" name="emojis" value="❣️"><label for="❣️">❣️</label></td>
-                <td><input type="checkbox" id="💘" name="emojis" value="💘"><label for="💘">💘</label></td>
-                <td><input type="checkbox" id="💓" name="emojis" value="💓"><label for="💓">💓</label></td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" id="🎀" name="emojis" value="🎀"><label for="🎀">🎀</label></td>
-                <td><input type="checkbox" id="⭐️" name="emojis" value="⭐️"><label for="⭐️"⭐️</label></td>
-                <td><input type="checkbox" id="✨" name="emojis" value="✨"><label for="✨">✨</label></td>
-                <td><input type="checkbox" id="🌟" name="emojis" value="🌟"><label for="🌟">🌟</label></td>
-                <td><input type="checkbox" id="❄️" name="emojis" value="❄️"><label for="❄️">❄️</label></td>
-                <td><input type="checkbox" id="🌲" name="emojis" value="🌲"><label for="🌲">🌲</label></td>
-                <td><input type="checkbox" id="🎄" name="emojis" value="🎄"><label for="🎄">🎄</label></td>
-                <td><input type="checkbox" id="🎉" name="emojis" value="🎉"><label for="🎉">🎉</label></td>
-                <td><input type="checkbox" id="🎊" name="emojis" value="🎊"><label for="🎊">🎊</label></td>
-                <td><input type="checkbox" id="🎁" name="emojis" value="🎁"><label for="🎁">🎁</label></td>
-                <td><input type="checkbox" id="🔔" name="emojis" value="🔔"><label for="🔔">🔔</label></td>
-                <td><input type="checkbox" id="🎅" name="emojis" value="🎅"><label for="🎅">🎅</label></td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" id="👻" name="emojis" value="👻"><label for="👻">👻</label></td>
-                <td><input type="checkbox" id="👽" name="emojis" value="👽"><label for="👽">👽</label></td>
-                <td><input type="checkbox" id="💀" name="emojis" value="💀"><label for="💀">💀</label></td>
-                <td><input type="checkbox" id="😈" name="emojis" value="😈"><label for="😈">😈</label></td>
-                <td><input type="checkbox" id="👹" name="emojis" value="👹"><label for="👹">👹</label></td>
-                <td><input type="checkbox" id="💩" name="emojis" value="💩"><label for="💩">💩</label></td>
-                <td><input type="checkbox" id="🤖" name="emojis" value="🤖"><label for="🤖">🤖</label></td>
-                <td><input type="checkbox" id="💍" name="emojis" value="💍"><label for="💍">💍</label></td>
-                <td><input type="checkbox" id="💋" name="emojis" value="💋"><label for="💋">💋</label></td>
-                <td><input type="checkbox" id="👕" name="emojis" value="👕"><label for="👕">👕</label></td>
-                <td><input type="checkbox" id="🧤" name="emojis" value="🧤"><label for="🧤">🧤</label></td>
-                <td><input type="checkbox" id="🧣" name="emojis" value="🧣"><label for="🧣">🧣</label></td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" id="🦦" name="emojis" value="🦦"><label for="🦦">🦦</label></td>
-                <td><input type="checkbox" id="🦄" name="emojis" value="🦄"><label for="🦄">🦄</label></td>
-                <td><input type="checkbox" id="🐠" name="emojis" value="🐠"><label for="🐠">🐠</label></td>
-                <td><input type="checkbox" id="🐙" name="emojis" value="🐙"><label for="🐙">🐙</label></td>
-                <td><input type="checkbox" id="🐬" name="emojis" value="🐬"><label for="🐬">🐬</label></td>
-                <td><input type="checkbox" id="🐑" name="emojis" value="🐑"><label for="🐑">🐑</label></td>
-                <td><input type="checkbox" id="🐈" name="emojis" value="🐈"><label for="🐈">🐈</label></td>
-                <td><input type="checkbox" id="🐇" name="emojis" value="🐈"><label for="🐈">🐈</label></td>
-                <td><input type="checkbox" id="🐕" name="emojis" value="🐕"><label for="🐕">🐕</label></td>
-                <td><input type="checkbox" id="🐿" name="emojis" value="🐿"><label for="🐿">🐿</label></td>
-                <td><input type="checkbox" id="🐾" name="emojis" value="🐾"><label for="🐾">🐾</label></td>
-                <td><input type="checkbox" id="🦋" name="emojis" value="🦋"><label for="🦋">🦋</label></td>
-            </tr>
-        </table>
-        <br>
-        <button type="submit">Generate Tree</button>
-    </form>
-    <pre id="tree"></pre>
-    <button onclick="copyTree()">Copy Tree</button>
-    <button onclick="downloadTree()">Download Tree</button>
-    <button onclick="toggleBackgroundColor()">Toggle Background Color</button>
-    <button onclick="toggleTreeColor()">Toggle Tree Color</button>
+    <div class="container">
+        <h1>Christmas Tree Generator for Keith&Echo</h1>
+        <form id="treeForm">
+           <div class="form-group">
+                <label for="height">Enter Tree Height:</label>
+                <input type="number" id="height" name="height" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="top">Enter Top Text:</label>
+                <input type="text" id="top" name="top" required>
+            </div>
+            <div class="form-group">
+                <label for="probability">Enter Decoration Probability:</label>
+                <input type="number" id="probability" name="probability" min="0" max="1" step="0.01" value="0.25" required>
+            </div>
+            <div class="form-group">
+                <label>Select Emojis:</label>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="O" name="emojis" value="O"><label for="O">O</label></td>
+                        <td><input type="checkbox" id="@" name="emojis" value="@"><label for="@">@</label></td>
+                        <td><input type="checkbox" id="o" name="emojis" value="o"><label for="o">o</label></td>
+                        <td><input type="checkbox" id="." name="emojis" value="."><label for=".">.</label></td>
+                        <td><input type="checkbox" id="💖" name="emojis" value="💖"><label for="💖">💖</label></td>
+                        <td><input type="checkbox" id="💗" name="emojis" value="💗"><label for="💗">💗</label></td>
+                        <td><input type="checkbox" id="❤️" name="emojis" value="❤️"><label for="❤️">❤️</label></td>
+                        <td><input type="checkbox" id="💚" name="emojis" value="💚"><label for="💚">💚</label></td>
+                        <td><input type="checkbox" id="💙" name="emojis" value="💙"><label for="💙">💙</label></td>
+                        <td><input type="checkbox" id="❣️" name="emojis" value="❣️"><label for="❣️">❣️</label></td>
+                        <td><input type="checkbox" id="💘" name="emojis" value="💘"><label for="💘">💘</label></td>
+                        <td><input type="checkbox" id="💓" name="emojis" value="💓"><label for="💓">💓</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="🎀" name="emojis" value="🎀"><label for="🎀">🎀</label></td>
+                        <td><input type="checkbox" id="⭐️" name="emojis" value="⭐️"><label for="⭐️"⭐️</label></td>
+                        <td><input type="checkbox" id="✨" name="emojis" value="✨"><label for="✨">✨</label></td>
+                        <td><input type="checkbox" id="🌟" name="emojis" value="🌟"><label for="🌟">🌟</label></td>
+                        <td><input type="checkbox" id="❄️" name="emojis" value="❄️"><label for="❄️">❄️</label></td>
+                        <td><input type="checkbox" id="🌲" name="emojis" value="🌲"><label for="🌲">🌲</label></td>
+                        <td><input type="checkbox" id="🎄" name="emojis" value="🎄"><label for="🎄">🎄</label></td>
+                        <td><input type="checkbox" id="🎉" name="emojis" value="🎉"><label for="🎉">🎉</label></td>
+                        <td><input type="checkbox" id="🎊" name="emojis" value="🎊"><label for="🎊">🎊</label></td>
+                        <td><input type="checkbox" id="🎁" name="emojis" value="🎁"><label for="🎁">🎁</label></td>
+                        <td><input type="checkbox" id="🔔" name="emojis" value="🔔"><label for="🔔">🔔</label></td>
+                        <td><input type="checkbox" id="🎅" name="emojis" value="🎅"><label for="🎅">🎅</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="👻" name="emojis" value="👻"><label for="👻">👻</label></td>
+                        <td><input type="checkbox" id="👽" name="emojis" value="👽"><label for="👽">👽</label></td>
+                        <td><input type="checkbox" id="💀" name="emojis" value="💀"><label for="💀">💀</label></td>
+                        <td><input type="checkbox" id="😈" name="emojis" value="😈"><label for="😈">😈</label></td>
+                        <td><input type="checkbox" id="👹" name="emojis" value="👹"><label for="👹">👹</label></td>
+                        <td><input type="checkbox" id="💩" name="emojis" value="💩"><label for="💩">💩</label></td>
+                        <td><input type="checkbox" id="🤖" name="emojis" value="🤖"><label for="🤖">🤖</label></td>
+                        <td><input type="checkbox" id="💍" name="emojis" value="💍"><label for="💍">💍</label></td>
+                        <td><input type="checkbox" id="💋" name="emojis" value="💋"><label for="💋">💋</label></td>
+                        <td><input type="checkbox" id="👕" name="emojis" value="👕"><label for="👕">👕</label></td>
+                        <td><input type="checkbox" id="🧤" name="emojis" value="🧤"><label for="🧤">🧤</label></td>
+                        <td><input type="checkbox" id="🧣" name="emojis" value="🧣"><label for="🧣">🧣</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="🦦" name="emojis" value="🦦"><label for="🦦">🦦</label></td>
+                        <td><input type="checkbox" id="🦄" name="emojis" value="🦄"><label for="🦄">🦄</label></td>
+                        <td><input type="checkbox" id="🐠" name="emojis" value="🐠"><label for="🐠">🐠</label></td>
+                        <td><input type="checkbox" id="🐙" name="emojis" value="🐙"><label for="🐙">🐙</label></td>
+                        <td><input type="checkbox" id="🐬" name="emojis" value="🐬"><label for="🐬">🐬</label></td>
+                        <td><input type="checkbox" id="🐑" name="emojis" value="🐑"><label for="🐑">🐑</label></td>
+                        <td><input type="checkbox" id="🐈" name="emojis" value="🐈"><label for="🐈">🐈</label></td>
+                        <td><input type="checkbox" id="🐇" name="emojis" value="🐈"><label for="🐈">🐈</label></td>
+                        <td><input type="checkbox" id="🐕" name="emojis" value="🐕"><label for="🐕">🐕</label></td>
+                        <td><input type="checkbox" id="🐿" name="emojis" value="🐿"><label for="🐿">🐿</label></td>
+                        <td><input type="checkbox" id="🐾" name="emojis" value="🐾"><label for="🐾">🐾</label></td>
+                        <td><input type="checkbox" id="🦋" name="emojis" value="🦋"><label for="🦋">🦋</label></td>
+                    </tr>
+                </table>
+            </div>
+            <button type="submit">Generate Tree</button>
+        </form>
+        <pre id="tree"></pre>
+        <div class="buttons">
+            <button onclick="copyTree()" class="btn">Copy Tree</button>
+            <button onclick="downloadTree()" class="btn">Download Tree</button>
+            <button onclick="toggleBackgroundColor()" class="btn">Toggle Background Color</button>
+            <button onclick="toggleTreeColor()" class="btn">Toggle Tree Color</button>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>
