@@ -1,4 +1,4 @@
-const colors = ['white', '#2ecc71', 'black', '#3498db', '#e74c3c', '#f1c40f'];
+const colors = ['white', '#f0f0f0', '#2ecc71', 'black', '#3498db', '#e74c3c', '#f1c40f'];
 const treeColors = ['#333', '#2ecc71', '#3498db', '#e74c3c', '#f1c40f', '#9b59b6', 'white'];
 let currentColorIndex = 0;
 let currentTreeColorIndex = 0;
