@@ -47,7 +47,7 @@ header h2 {
 .form-group input[type="text"],
 .form-group select {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
@@ -67,7 +67,7 @@ header h2 {
 }
 
 .form-group table td {
-    padding: 20px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -125,5 +125,16 @@ header h2 {
 
     .btn {
         padding: 8px 16px;
+    }
+
+    .form-group table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .form-group table td {
+        display: inline-block;
+        min-width: 50px;
     }
 }
