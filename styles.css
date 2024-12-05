@@ -56,6 +56,13 @@ header h2 {
     width: calc(100% - 16px); /* 调整输入框宽度 */
 }
 
+.form-group input[type="number"]:focus,
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
 .form-group table {
     width: 100%;
     border-collapse: collapse;
