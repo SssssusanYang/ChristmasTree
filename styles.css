@@ -45,21 +45,14 @@ header h2 {
 
 .form-group input[type="number"],
 .form-group input[type="text"],
-.form-group select {
-    width: 100%;
-    padding: 10px;
+.form-group select:{
+    border-color: #3498db;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
     transition: border-color 0.3s ease;
-}
-
-.form-group input[type="number"]:focus,
-.form-group input[type="text"]:focus,
-.form-group select:focus {
-    border-color: #3498db;
     outline: none;
-    padding: 8px;
+    padding: 10px;
     width: calc(100% - 16px); /* 调整输入框宽度 */
 }
 
