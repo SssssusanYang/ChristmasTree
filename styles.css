@@ -59,6 +59,8 @@ header h2 {
 .form-group select:focus {
     border-color: #3498db;
     outline: none;
+    padding: 8px;
+    width: calc(100% - 16px); /* 调整输入框宽度 */
 }
 
 .form-group table {
